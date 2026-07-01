@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://mohanswamy51-cell.github.io/srirangam-vignesh-civiltech-1.0/sitemap.xml
