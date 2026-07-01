@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Srirangam Vignesh CivilTech</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#08121f;
+
+color:white;
+
+}
+
+header{
+
+height:75px;
+
+background:#0f172a;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 50px;
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+box-shadow:0 0 20px rgba(0,0,0,.4);
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#38bdf8;
+
+}
+
+.logo i{
+
+margin-right:10px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+margin-left:25px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#38bdf8;
+
+}
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:40px;
+
+background:linear-gradient(135deg,#08121f,#102a43);
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+max-width:850px;
+
+line-height:1.8;
+
+color:#d1d5db;
+
+}
+
+.hero button{
+
+margin-top:35px;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:12px;
+
+background:#38bdf8;
+
+color:#08121f;
+
+font-size:20px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.05);
+
+}
+
+.cards{
+
+padding:70px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:#112240;
+
+padding:35px;
+
+border-radius:18px;
+
+transition:.4s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 25px #38bdf8;
+
+}
+
+.card i{
+
+font-size:45px;
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#cbd5e1;
+
+line-height:1.7;
+
+}
+
+footer{
+
+background:#0f172a;
+
+padding:25px;
+
+text-align:center;
+
+color:#94a3b8;
+
+}
+/* ========= PART 1B ========= */
+
+html{
+scroll-behavior:smooth;
+}
+
+.hero{
+animation:fadeUp 1.2s ease;
+}
+
+.card{
+cursor:pointer;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 0 35px rgba(56,189,248,.45);
+}
+
+button{
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #38bdf8;
+}
+
+.counter-section{
+
+padding:80px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+background:#08101d;
+
+}
+
+.counter{
+
+background:#112240;
+
+padding:40px;
+
+border-radius:18px;
+
+text-align:center;
+
+}
+
+.counter h1{
+
+font-size:48px;
+
+color:#38bdf8;
+
+margin-bottom:10px;
+
+}
+
+.counter p{
+
+font-size:20px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+.calc-section{
+padding:80px 20px;
+display:flex;
+justify-content:center;
+}
+
+.calc-box{
+width:500px;
+max-width:100%;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 25px rgba(56,189,248,.25);
+}
+
+.calc-box h2{
+text-align:center;
+margin-bottom:25px;
+color:#38bdf8;
+}
+
+.calc-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+color:white;
+border:none;
+border-radius:10px;
+font-size:17px;
+outline:none;
+}
+
+.calc-box button{
+width:100%;
+margin-top:15px;
+padding:15px;
+background:#38bdf8;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:#08121f;
+}
+
+#result{
+margin-top:20px;
+text-align:center;
+font-size:22px;
+color:#22c55e;
+font-weight:bold;
+}
+.cement-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.cement-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.cement-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.cement-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#22c55e;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#cementResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#38bdf8;
+font-weight:bold;
+}
+.sand-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.sand-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.sand-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.sand-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#f59e0b;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#sandResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#fbbf24;
+font-weight:bold;
+}
+.aggregate-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.aggregate-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.aggregate-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.aggregate-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#ef4444;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#aggregateResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#22c55e;
+font-weight:bold;
+}
+.steel-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.steel-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.steel-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.steel-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#8b5cf6;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#steelResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#38bdf8;
+font-weight:bold;
+}
+.brick-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.brick-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.brick-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.brick-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#f97316;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#brickResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#f97316;
+font-weight:bold;
+}
+.tiles-box{
+margin-top:40px;
+background:#112240;
+padding:30px;
+border-radius:18px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+}
+
+.tiles-box h2{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.tiles-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1e293b;
+border:none;
+border-radius:10px;
+color:white;
+font-size:17px;
+}
+
+.tiles-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+background:#0ea5e9;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+
+#tilesResult{
+margin-top:20px;
+font-size:22px;
+text-align:center;
+color:#22c55e;
+font-weight:bold;
+}
+</style>
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-building"></i>
+
+Srirangam Vignesh CivilTech
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Calculators</a>
+
+<a href="#">Gallery</a>
+
+<a href="#">Notes</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Build The Future With Civil Engineering</h1>
+
+<p>
+
+Professional Civil Engineering Platform for Students,
+
+Site Engineers,
+
+Quantity Surveyors,
+
+and Construction Professionals.
+
+</p>
+
+<button>Explore CivilTech</button>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-calculator"></i>
+
+<h2>Civil Calculators</h2>
+
+<p>Concrete, Steel, Cement, Brick and Quantity Calculators.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+<h2>Unit Converter</h2>
+
+<p>Length, Area, Volume, Weight and Construction Units.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-house"></i>
+
+<h2>Building Designs</h2>
+
+<p>Modern house plans and engineering drawings.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h2>Civil Notes</h2>
+
+<p>IS Codes, RCC, PCC, Footings, Columns and Slabs.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hard-hat"></i>
+
+<h2>Site Engineer</h2>
+
+<p>Daily site work tips and quality checking methods.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-cubes"></i>
+
+<h2>Material Calculator</h2>
+
+<p>Cement, Sand, Aggregate and Steel calculations.</p>
+
+</div>
+
+</div>
+</div>
+
+</section>
+<section class="counter-section">
+
+<div class="counter">
+
+<h1 id="c1">0</h1>
+
+<p>Projects</p>
+
+</div>
+
+<div class="counter">
+
+<h1 id="c2">0</h1>
+
+<p>Engineers</p>
+
+</div>
+
+<div class="counter">
+
+<h1 id="c3">0</h1>
+
+<p>Students</p>
+
+</div>
+
+<div class="counter">
+
+<h1 id="c4">0</h1>
+
+<p>Calculations</p>
+
+</div>
+
+</section>
+<section class="cards">
+
+<div class="card">
+<i class="fa-solid fa-road"></i>
+<h2>Road Calculator</h2>
+<p>Road quantity estimation and layer calculations.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-water"></i>
+<h2>Water Tank</h2>
+<p>Tank volume and water capacity calculator.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-bridge"></i>
+<h2>Bridge Engineering</h2>
+<p>Bridge basics, design concepts and guides.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building-columns"></i>
+<h2>Structural Design</h2>
+<p>Beam, Column and Slab calculations.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-file-pdf"></i>
+<h2>Civil PDFs</h2>
+<p>Download engineering books and notes.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-camera"></i>
+<h2>Project Gallery</h2>
+<p>Construction project photos and site work.</p>
+</div>
+
+</section>
+<section class="calc-section">
+
+<div class="calc-box">
+
+<h2>Concrete Volume Calculator</h2>
+
+<input type="number" id="length" placeholder="Length (meters)">
+<input type="number" id="width" placeholder="Width (meters)">
+<input type="number" id="height" placeholder="Height (meters)">
+
+<button onclick="calculateConcrete()">
+Calculate
+</button>
+
+<div id="result">
+Volume: 0 m³
+</div>
+
+</div>
+
+</section>
+<div class="calc-section">
+
+<div class="cement-box">
+
+<h2>Cement Bags Calculator</h2>
+
+<input type="number" id="cementVolume" placeholder="Concrete Volume (m³)">
+
+<button onclick="calculateCement()">
+
+Calculate Cement Bags
+
+</button>
+
+<div id="cementResult">
+
+Cement Bags: 0
+
+</div>
+
+</div>
+<div class="calc-section">
+
+<div class="sand-box">
+
+<h2>Sand Calculator</h2>
+
+<input type="number" id="sandVolume" placeholder="Concrete Volume (m³)">
+
+<button onclick="calculateSand()">
+
+Calculate Sand
+
+</button>
+
+<div id="sandResult">
+
+Sand Required: 0 m³
+
+</div>
+
+</div>
+<div class="calc-section">
+
+<div class="aggregate-box">
+
+<h2>Aggregate Calculator</h2>
+
+<input type="number" id="aggregateVolume" placeholder="Concrete Volume (m³)">
+
+<button onclick="calculateAggregate()">
+
+Calculate Aggregate
+
+</button>
+
+<div id="aggregateResult">
+
+Aggregate Required: 0 m³
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="calc-section">
+
+<div class="steel-box">
+
+<h2>Steel Weight Calculator</h2>
+
+<input type="number" id="steelDia" placeholder="Steel Diameter (mm)">
+
+<input type="number" id="steelLength" placeholder="Length (meters)">
+
+<button onclick="calculateSteel()">
+Calculate Steel Weight
+</button>
+
+<div id="steelResult">
+Steel Weight: 0 kg
+</div>
+
+</div>
+<!-- ================= PART 4A - BRICK CALCULATOR ================= -->
+
+<section class="calc-section">
+
+<div class="brick-box">
+
+<h2>Brick Calculator</h2>
+
+<input type="number" id="brickLength" placeholder="Wall Length (meters)">
+
+<input type="number" id="brickHeight" placeholder="Wall Height (meters)">
+
+<input type="number" id="brickThickness" placeholder="Wall Thickness (meters)">
+
+<button onclick="calculateBricks()">
+
+Calculate Bricks
+
+</button>
+
+<div id="brickResult">
+
+Bricks Required: 0
+
+</div>
+
+</div>
+
+</section>
+<section class="calc-section">
+
+<div class="tiles-box">
+
+<h2>Tiles Calculator</h2>
+
+<input type="number" id="floorLength" placeholder="Floor Length (meters)">
+
+<input type="number" id="floorWidth" placeholder="Floor Width (meters)">
+
+<input type="number" id="tileLength" placeholder="Tile Length (meters)">
+
+<input type="number" id="tileWidth" placeholder="Tile Width (meters)">
+
+<button onclick="calculateTiles()">
+Calculate Tiles
+</button>
+
+<div id="tilesResult">
+Tiles Required: 0
+</div>
+
+</div>
+
+</section>
+<section class="calc-section">
+
+<div class="calc-box">
+
+<h2>Project Report</h2>
+
+<button onclick="downloadPDF()">
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Download PDF Report
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Srirangam Vignesh CivilTech
+
+</footer>
+<script>
+
+function animate(id,max){
+let n=0;
+const obj=document.getElementById(id);
+const timer=setInterval(()=>{
+n++;
+obj.innerHTML=n+"+";
+if(n>=max) clearInterval(timer);
+},15);
+}
+
+animate("c1",250);
+animate("c2",85);
+animate("c3",500);
+animate("c4",1000);
+
+function calculateConcrete(){
+
+const l=parseFloat(document.getElementById("length").value);
+const w=parseFloat(document.getElementById("width").value);
+const h=parseFloat(document.getElementById("height").value);
+
+if(isNaN(l)||isNaN(w)||isNaN(h)){
+document.getElementById("result").innerHTML="Please enter all values.";
+return;
+}
+
+const volume=l*w*h;
+
+document.getElementById("result").innerHTML=
+"Concrete Volume = <br>"+volume.toFixed(2)+" m³";
+
+}
+
+function calculateCement(){
+
+const volume=parseFloat(document.getElementById("cementVolume").value);
+
+if(isNaN(volume)){
+document.getElementById("cementResult").innerHTML="Enter Volume";
+return;
+}
+
+const bags=volume*8;
+
+document.getElementById("cementResult").innerHTML=
+"Cement Bags Required = <br>"+bags.toFixed(1)+" Bags";
+
+}
+
+function calculateSand(){
+
+const volume=parseFloat(document.getElementById("sandVolume").value);
+
+if(isNaN(volume)){
+
+document.getElementById("sandResult").innerHTML="Enter Volume";
+
+return;
+
+}
+
+// Approximation for demonstration
+const sand=volume*0.44;
+
+document.getElementById("sandResult").innerHTML=
+"Sand Required = <br>"+sand.toFixed(2)+" m³";
+
+}
+function calculateAggregate(){
+
+const volume=parseFloat(document.getElementById("aggregateVolume").value);
+
+if(isNaN(volume)){
+document.getElementById("aggregateResult").innerHTML="Enter Volume";
+return;
+}
+
+// Demo approximation
+const aggregate=volume*0.88;
+
+document.getElementById("aggregateResult").innerHTML=
+"Aggregate Required = <br>"+aggregate.toFixed(2)+" m³";
+
+}
+function calculateSteel(){
+
+const dia=parseFloat(document.getElementById("steelDia").value);
+
+const len=parseFloat(document.getElementById("steelLength").value);
+
+if(isNaN(dia)||isNaN(len)){
+
+document.getElementById("steelResult").innerHTML="Enter all values";
+
+return;
+
+}
+
+// Standard steel weight formula
+const weight=(dia*dia/162)*len;
+
+document.getElementById("steelResult").innerHTML=
+"Steel Weight = <br>"+weight.toFixed(2)+" kg";
+
+}
+function calculateBricks(){
+
+const l=parseFloat(document.getElementById("brickLength").value);
+const h=parseFloat(document.getElementById("brickHeight").value);
+const t=parseFloat(document.getElementById("brickThickness").value);
+
+if(isNaN(l)||isNaN(h)||isNaN(t)){
+document.getElementById("brickResult").innerHTML="Enter all values";
+return;
+}
+
+const wallVolume=l*h*t;
+const bricks=Math.ceil(wallVolume/0.00154);
+
+document.getElementById("brickResult").innerHTML=
+"Bricks Required = <br>"+bricks+" Bricks";
+
+}
+function calculateTiles(){
+
+const floorLength = parseFloat(document.getElementById("floorLength").value);
+const floorWidth = parseFloat(document.getElementById("floorWidth").value);
+const tileLength = parseFloat(document.getElementById("tileLength").value);
+const tileWidth = parseFloat(document.getElementById("tileWidth").value);
+
+if(isNaN(floorLength) || isNaN(floorWidth) || isNaN(tileLength) || isNaN(tileWidth)){
+
+document.getElementById("tilesResult").innerHTML="Enter all values";
+return;
+
+}
+
+const floorArea = floorLength * floorWidth;
+const tileArea = tileLength * tileWidth;
+const tiles = Math.ceil(floorArea / tileArea);
+
+document.getElementById("tilesResult").innerHTML =
+"Tiles Required = <br>" + tiles + " Tiles";
+
+}
+async function downloadPDF(){
+
+const { jsPDF } = window.jspdf;
+
+const doc = new jsPDF();
+
+doc.setFontSize(20);
+doc.text("Srirangam Vignesh CivilTech",20,20);
+
+doc.setFontSize(12);
+
+doc.text("Civil Engineering Report",20,35);
+
+doc.text("------------------------------",20,42);
+
+doc.text("Concrete : " + document.getElementById("result").innerText,20,55);
+
+doc.text("Cement : " + document.getElementById("cementResult").innerText,20,70);
+
+doc.text("Sand : " + document.getElementById("sandResult").innerText,20,85);
+
+doc.text("Aggregate : " + document.getElementById("aggregateResult").innerText,20,100);
+
+doc.text("Steel : " + document.getElementById("steelResult").innerText,20,115);
+
+doc.text("Bricks : " + document.getElementById("brickResult").innerText,20,130);
+
+doc.text("Tiles : " + document.getElementById("tilesResult").innerText,20,145);
+
+doc.text("------------------------------",20,165);
+
+doc.text("Generated by",20,180);
+
+doc.setFontSize(16);
+doc.text("Srirangam Vignesh CivilTech",20,190);
+
+doc.save("CivilTech_Report.pdf");
+
+}
+</script>
+
+</body>
+
+</html>
